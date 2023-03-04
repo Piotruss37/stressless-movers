@@ -1,0 +1,47 @@
+.insurance{
+    &-p{
+        text-align: center;
+        margin-bottom: 1em;
+        font-size: 1.9rem;
+    }
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    &__card{
+        width: 100%;
+        max-width: 350px;
+        margin: 1em;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0px 0px 10px #e2dddd;
+        padding-top: 1.5em;
+        padding-bottom: 2.5em;
+    }
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        margin-top: 0.5em;
+    }
+    &__heading{
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width:992px){
+    .insurance{
+        &__card{
+            margin: 1.5em;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	img {
+		transition: transform 0.3s;
+		max-width: 300px;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	&__item {
+		overflow: hidden;
+		width: 90%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1em;
+	}
+}
+@media (min-width: 992px) {
+	.gallery {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&__item {
+			width: 30%;
+			margin: 0.5em;
+			img {
+				width: 100%;
+				max-width: 400px;
+				cursor: pointer;
+			}
+		}
+	}
+}

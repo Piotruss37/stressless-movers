@@ -1,0 +1,58 @@
+@keyframes drive {
+	0% {
+		transform: translateX(-40%);
+		opacity: 1;
+	}
+
+	28% {
+		transform: translateX(120%);
+	}
+
+	29% {
+		transform: translateX(160%);
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+		transform: translateX(300%);
+	}
+	31% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	32% {
+		opacity: 1;
+	}
+	43% {
+		transform: translateX(-40%);
+	}
+}
+@keyframes drive2 {
+	0% {
+		transform: translateX(-40%);
+		opacity: 1;
+	}
+
+	38% {
+		transform: translateX(120vw);
+	}
+
+	39% {
+		transform: translateX(250vw);
+		opacity: 1;
+	}
+	40% {
+		opacity: 0;
+		transform: translateX(260vw);
+	}
+	41% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	42% {
+		opacity: 1;
+	}
+	53% {
+		transform: translateX(-40%);
+	}
+}

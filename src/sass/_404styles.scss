@@ -1,0 +1,21 @@
+
+.not-found {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2.5em;
+	width: 100%;
+
+	&-title {
+		text-align: center;
+		font-size: 2.3rem;
+		margin-bottom: 2em;
+	}
+	img {
+		width: 100%;
+		max-width: 400px;
+		margin: 0 auto;
+		margin-bottom: 5em;
+		border-radius: 8px;
+	}
+}

@@ -1,0 +1,117 @@
+.header {
+	height: 100vh;
+	background-image: url('../../dist/img/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	&__content {
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+		padding-left: 0.3em;
+		padding-right: 0.3em;
+	}
+	&__btn {
+		color: #fff;
+		background-color: transparent;
+		border: 1px solid #ffffff;
+		font-size: 1.9rem;
+		padding: 0.75em 2em;
+		border-radius: 4px;
+		transition: transform 0.3s, border 0.3s;
+		&:hover {
+			background-color: #333743;
+			border: 1px solid transparent;
+		}
+	}
+	.truck-right {
+		display: none;
+	}
+
+	&__heading {
+		text-transform: uppercase;
+		padding-top: 3.5em;
+		font-size: 4rem;
+		letter-spacing: 1px;
+		margin-bottom: 0.3em;
+		font-weight: bold;
+	}
+	&__subtitle {
+		font-size: 2.5rem;
+		margin-bottom: 0.7em;
+	}
+	&__btns {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sec {
+		margin-top: 0.7em;
+		background-color: #0076e8;
+		border: 1px solid transparent;
+		&::before{
+			background-color: #0b6ac2;
+		}
+	}
+
+	.truck-left {
+		position: absolute;
+		bottom: 0;
+		z-index: -1;
+		left: 0;
+		width: 100%;
+		max-width: 600px;
+		transform: translateX(-40%);
+		animation: drive 11s 1s forwards infinite;
+	}
+}
+@media (min-width: 750px) {
+	.header {
+		height: 100vh;
+		.truck-left {
+			max-width: 620px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		height: 100vh;
+		&__subtitle {
+			font-size: 2.7rem;
+		}
+		&__heading {
+			padding-top: 3.5em;
+		}
+		&__btn {
+			font-size: 2rem;
+		}
+		.truck-left {
+			max-width: 720px;
+			animation-name: drive2;
+		}
+		&__btns {
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			a {
+				margin-right: 1em;
+			}
+			.sec{
+				margin-top: 0;
+			}
+		}
+	}
+}
+@media (min-width: 1400px) {
+	.header {
+		.truck-left {
+			max-width: 850px;
+			animation-name: drive2;
+		}
+	}
+}

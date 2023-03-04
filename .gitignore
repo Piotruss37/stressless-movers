@@ -1,0 +1,15 @@
+node_modules
+PHPMailer
+dist
+gulpfile.js
+package.json
+package-lock.json
+robots.txt
+sitemap.xml
+mail.php
+quote.php
+index.html
+privacy-policy.html
+.htaccess
+favicon.png
+404.html

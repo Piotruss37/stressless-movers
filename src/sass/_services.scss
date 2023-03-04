@@ -1,0 +1,112 @@
+.services {
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__card {
+		width: 100%;
+		background-color: #0076e8;
+		color: #fff;
+		text-align: center;
+		padding: 2.8em 2em;
+		border-radius: 12px;
+		max-width: 470px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 3em;
+		padding-top: 1.7em;
+	}
+	&__card:last-of-type {
+		margin-bottom: 0;
+	}
+	&__option {
+		margin-bottom: 0.6em;
+		display: flex;
+		align-items: center;
+		svg {
+			flex-shrink: 0;
+			margin-right: 0.5em;
+		}
+		p {
+			font-size: 1.65rem;
+		}
+	}
+	&__card-text {
+		margin-bottom: 1.5em;
+		line-height: 28px;
+	}
+	&__card-heading {
+		margin-bottom: 0.5em;
+		text-align: center;
+		font-weight: normal;
+		font-size: 2.3rem;
+	}
+	&__btn {
+		margin: 0 auto;
+		margin-top: 1em;
+		border-radius: 4px;
+		background-color: #fff;
+		padding: 0.5em 1em;
+		font-size: 1.8rem;
+		width: max-content;
+	}
+	&__p {
+		margin-bottom: 0.8em;
+	}
+	&__providings {
+		flex-grow: 1;
+		justify-self: flex-end;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+}
+.serv-img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 0.6em;
+}
+
+.rvw{
+	text-align: center;
+	margin-bottom: 1.4em;
+	font-size: 1.9rem;
+}
+.short-heading{
+	max-width: 250px;
+}
+
+@media (min-width: 456px) {
+	.services {
+		&__card {
+			padding-left: 2.5em;
+			max-width: 400px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.services {
+		max-width: 1200px;
+		margin: 0 auto;
+		&__card {
+			width: 50%;
+			margin-right: 0em;
+			min-height: 640px;
+			margin: 2em;
+		}
+		
+	}
+}
+
+@media (min-width: 992px) {
+	.services {
+		
+		.services__card:last-of-type {
+			margin-bottom: 3em;
+		}
+	}
+}
