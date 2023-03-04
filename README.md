@@ -22,4 +22,4 @@ https://stressless-movers.com
 - CSS (SCSS)
 - JS
 - PHP (mail handling)
-- Gulp
+- Gulp (project setup / image optimisation)
