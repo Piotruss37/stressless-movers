@@ -16,7 +16,7 @@ https://stressless-movers.com
 - Calculate distance beetween point A and point B (Google Martix API)
 - Form validation
 
-## 🛠 Tech stack used for project
+## 🛠 Tech stack used for the project
 
 - HTML
 - CSS (SCSS)
